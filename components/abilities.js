@@ -10,7 +10,7 @@ import { IoLogoReact } from "react-icons/io5";
 
 const Abilities = () => {
   return (
-    <div className="mt-16">
+    <div className="mt-16 md:max-w-2xl xl:max-w-5xl mx-auto">
       <h2 className="text-center my-8 text-2xl text-aluminium">Abilities</h2>
       <div className="flex flex-col justify-center items-center gap-8 md:flex-row md:flex-wrap md:justify-around md:items-center md:px-32 lg:px-40 lg:gap-12">
         <div className="alilities-card">

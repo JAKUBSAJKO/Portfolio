@@ -11,7 +11,7 @@ const Home = () => {
         <title>Jakub Sajko | Home</title>
         <link rel="icon" href="/logo.ico" type="image/x-icon" />
       </Head>
-      <div className="min-h-[calc(100vh-126px)] flex flex-col justify-center max-w-5xl mx-auto px-6 py-12 sm:px-16">
+      <div className="min-h-[calc(100vh-126px)] flex flex-col justify-center max-w-5xl mx-auto px-6 py-12 sm:px-16 sm:my-4">
         <motion.h1
           className="text-5xl mb-4 font-bold md:text-6xl"
           initial={{ y: 50, opacity: 0 }}

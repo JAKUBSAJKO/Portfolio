@@ -11,7 +11,7 @@ const Hobbies = () => {
   const [hobby, setHobby] = useState("music");
 
   return (
-    <div className="mt-16 lg:mx-12">
+    <div className="mt-16 lg:max-w-5xl mx-auto">
       <h2 className="text-center mt-12 text-2xl text-aluminium">Hobbies</h2>
       <div className="flex flex-col md:flex-row">
         <div className="basis-3/5 py-8 text-white md:p-8">
