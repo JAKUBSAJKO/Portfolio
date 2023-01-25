@@ -4,4 +4,5 @@ export const outsideUrls = {
   github: "https://github.com/JAKUBSAJKO",
   linkedin: "https://www.linkedin.com/in/jakub-sajko-83a851231/",
   wordcloudGame: "https://github.com/JAKUBSAJKO/Wordcloud-Game",
+  myMind: "https://github.com/JAKUBSAJKO/My-Mind",
 };

@@ -1,6 +1,7 @@
 import Head from "next/head";
 import { motion } from "framer-motion";
-import { IoIosCloud, IoIosBasketball } from "react-icons/io";
+import { IoIosCloud } from "react-icons/io";
+import { IoPeopleCircle } from "react-icons/io5";
 import { SiAboutdotme } from "react-icons/si";
 import { outsideUrls } from "../constants";
 
@@ -34,7 +35,7 @@ const Home = () => {
         </motion.p>
         <div className="flex flex-col justify-center items-center gap-6 mt-8 md:flex-row md:gap-1 md:pb-4 md:px-auto md:-mx-12 md:mt-16 lg:gap-16 lg:px-4 lg:-mx-0">
           <motion.a
-            href={outsideUrls.wordcloudGame}
+            href={outsideUrls.myMind}
             target="_blank"
             rel="noopener noreferrer"
             className="w-full max-w-xs h-40 rounded-lg p-4 text-vulcan flex flex-col justify-around md:w-1/3"
@@ -48,14 +49,14 @@ const Home = () => {
             }}
           >
             <div className="w-8 h-8 bg-steelGrey flex justify-center items-center rounded-md text-white text-md">
-              <IoIosCloud />
+              <IoPeopleCircle />
             </div>
             <p className="text-left font-semibold text-base text-white mt-2">
-              Wordcloud Game
+              My Mind
             </p>
             <p className="text-white text-left font-light text-xs">
-              A simple game where the player has to select words from a matching
-              category.
+              My mind is a application where you can create account and share
+              your minds with people.
             </p>
           </motion.a>
           <motion.div
@@ -81,7 +82,7 @@ const Home = () => {
             </p>
           </motion.div>
           <motion.a
-            href={outsideUrls.apiNbaApp}
+            href={outsideUrls.wordcloudGame}
             target="_blank"
             rel="noopener noreferrer"
             className="w-full max-w-xs h-40 rounded-lg p-4 text-vulcan flex flex-col justify-around md:w-1/3"
@@ -95,13 +96,14 @@ const Home = () => {
             }}
           >
             <div className="w-8 h-8 bg-steelGrey flex justify-center items-center rounded-md text-white text-md">
-              <IoIosBasketball />
+              <IoIosCloud />
             </div>
             <p className="text-left font-semibold text-base text-white mt-2">
-              API NBA APP
+              Wordcloud Game
             </p>
             <p className="text-white text-left font-light text-xs">
-              I&apos;m a basketball fan so found the NBA API and made the app.
+              A simple game where the player has to select words from a matching
+              category.
             </p>
           </motion.a>
         </div>
