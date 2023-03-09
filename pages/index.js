@@ -1,6 +1,6 @@
 import Head from "next/head";
 import { motion } from "framer-motion";
-import { IoIosCloud } from "react-icons/io";
+import { IoIosBasketball } from "react-icons/io";
 import { IoPeopleCircle } from "react-icons/io5";
 import { SiAboutdotme } from "react-icons/si";
 import { outsideUrls } from "../constants";
@@ -96,14 +96,14 @@ const Home = () => {
             }}
           >
             <div className="w-8 h-8 bg-steelGrey flex justify-center items-center rounded-md text-white text-md">
-              <IoIosCloud />
+              <IoIosBasketball />
             </div>
             <p className="text-left font-semibold text-base text-white mt-2">
-              Wordcloud Game
+              Back to 2010 NBA Final
             </p>
             <p className="text-white text-left font-light text-xs">
-              A simple game where the player has to select words from a matching
-              category.
+              Quiz game where user can check his knowledge about NBA and help LA
+              Lakers to beat Boston Celtic.
             </p>
           </motion.a>
         </div>
