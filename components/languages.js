@@ -32,7 +32,7 @@ const Languages = () => {
             />
           </div>
           <h3 className="mt-2">English Language</h3>
-          <h4>B1</h4>
+          <h4>B2</h4>
         </div>
       </div>
     </div>
