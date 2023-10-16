@@ -1,13 +1,32 @@
+import { useEffect, useState } from "react";
 import { FaHourglassHalf } from "react-icons/fa";
 import { MdComputer, MdOutlineSchool } from "react-icons/md";
 import { VerticalTimeline, VerticalTimelineElement } from "react-vertical-timeline-component";
 import "react-vertical-timeline-component/style.min.css";
 
+const laptopWidth = 1024;
+
 const Experience = () => {
+  const [isLaptop, setIsLaptop] = useState(false);
+
+  const handleResize = () => {
+    setIsLaptop(window.innerWidth >= laptopWidth);
+  };
+
+  useEffect(() => {
+    handleResize();
+
+    window.addEventListener("resize", handleResize);
+
+    return () => {
+      window.removeEventListener("resize", handleResize);
+    };
+  }, []);
+
   return (
     <div className="mt-8">
       <h2 className="text-center mt-12 mb-8 text-2xl text-aluminium">School & Work Experience</h2>
-      <VerticalTimeline animate={true} lineColor={"#57EFB4"}>
+      <VerticalTimeline animate={isLaptop ? true : false} lineColor={"#57EFB4"}>
         <VerticalTimelineElement
           className="vertical-timeline-element--work"
           contentStyle={{
