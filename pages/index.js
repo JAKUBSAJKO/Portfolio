@@ -1,8 +1,8 @@
-import Head from "next/head";
 import { motion } from "framer-motion";
+import Head from "next/head";
+import { FaShoppingCart } from "react-icons/fa";
 import { IoIosBasketball } from "react-icons/io";
 import { IoPeopleCircle } from "react-icons/io5";
-import { SiAboutdotme } from "react-icons/si";
 import { outsideUrls } from "../constants";
 
 const Home = () => {
@@ -27,15 +27,13 @@ const Home = () => {
           animate={{ y: 0, opacity: 1 }}
           transition={{ delay: 0.5, duration: 1 }}
         >
-          I am <span className="text-limeGreen">Jakub</span>, frontend
-          developer. I work with <span className="text-limeGreen">React</span>{" "}
-          but I&apos;m open to learn any frontend framework. Look at my last 3
-          projects and <span className="text-limeGreen">choose me</span> to your
-          team :)
+          I am <span className="text-limeGreen">Jakub</span>, frontend developer. I work with{" "}
+          <span className="text-limeGreen">React</span> but I&apos;m open to learn any frontend framework. Look at my
+          last 3 projects and <span className="text-limeGreen">choose me</span> to your team :)
         </motion.p>
         <div className="flex flex-col justify-center items-center gap-6 mt-8 md:flex-row md:gap-1 md:pb-4 md:px-auto md:-mx-12 md:mt-16 lg:gap-16 lg:px-4 lg:-mx-0">
           <motion.a
-            href={outsideUrls.myMind}
+            href={outsideUrls.backTo2010NBAFinals}
             target="_blank"
             rel="noopener noreferrer"
             className="w-full max-w-xs h-40 rounded-lg p-4 text-vulcan flex flex-col justify-around md:w-1/3"
@@ -51,15 +49,15 @@ const Home = () => {
             <div className="w-8 h-8 bg-steelGrey flex justify-center items-center rounded-md text-white text-md">
               <IoPeopleCircle />
             </div>
-            <p className="text-left font-semibold text-base text-white mt-2">
-              My Mind
-            </p>
+            <p className="text-left font-semibold text-base text-white mt-2">My Mind</p>
             <p className="text-white text-left font-light text-xs">
-              My mind is a application where you can create account and share
-              your minds with people.
+              My mind is a application where you can create account and share your minds with people.
             </p>
           </motion.a>
-          <motion.div
+          <motion.a
+            href={outsideUrls.myShop}
+            target="_blank"
+            rel="noopener noreferrer"
             className="w-full max-w-xs h-40 bg-steelGrey rounded-lg p-4 text-vulcan flex flex-col justify-around md:w-1/3"
             initial={{ x: "-100vw" }}
             animate={{ x: 0 }}
@@ -71,18 +69,15 @@ const Home = () => {
             }}
           >
             <div className="w-8 h-8 bg-limeGreen flex justify-center items-center rounded-md text-md">
-              <SiAboutdotme />
+              <FaShoppingCart />
             </div>
-            <p className="text-left font-semibold text-base text-white mt-2">
-              Portfolio
-            </p>
+            <p className="text-left font-semibold text-base text-white mt-2">My Shop</p>
             <p className="text-white text-left font-light text-xs">
-              A website dedicated to me. You can find out a few things about me
-              there.
+              My Shop is a simulation of an e-commerce shop. Users can create accounts and buy products.
             </p>
-          </motion.div>
+          </motion.a>
           <motion.a
-            href={outsideUrls.wordcloudGame}
+            href={outsideUrls.backTo2010NBAFinals}
             target="_blank"
             rel="noopener noreferrer"
             className="w-full max-w-xs h-40 rounded-lg p-4 text-vulcan flex flex-col justify-around md:w-1/3"
@@ -98,12 +93,9 @@ const Home = () => {
             <div className="w-8 h-8 bg-steelGrey flex justify-center items-center rounded-md text-white text-md">
               <IoIosBasketball />
             </div>
-            <p className="text-left font-semibold text-base text-white mt-2">
-              Back to 2010 NBA Final
-            </p>
+            <p className="text-left font-semibold text-base text-white mt-2">Back to 2010 NBA Final</p>
             <p className="text-white text-left font-light text-xs">
-              Quiz game where user can check his knowledge about NBA and help LA
-              Lakers to beat Boston Celtic.
+              Quiz game where user can check his knowledge about NBA and help LA Lakers to beat Boston Celtic.
             </p>
           </motion.a>
         </div>

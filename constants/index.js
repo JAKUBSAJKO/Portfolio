@@ -5,4 +5,6 @@ export const outsideUrls = {
   linkedin: "https://www.linkedin.com/in/jakub-sajko-83a851231/",
   wordcloudGame: "https://github.com/JAKUBSAJKO/Wordcloud-Game",
   myMind: "https://github.com/JAKUBSAJKO/My-Mind",
+  backTo2010NBAFinals: "https://github.com/JAKUBSAJKO/Back-to-2010-NBA-Finals",
+  myShop: "https://github.com/JAKUBSAJKO/MyShop",
 };
