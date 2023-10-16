@@ -1,18 +1,37 @@
-import {
-  VerticalTimeline,
-  VerticalTimelineElement,
-} from "react-vertical-timeline-component";
-import "react-vertical-timeline-component/style.min.css";
-import { MdComputer, MdOutlineSchool } from "react-icons/md";
 import { FaHourglassHalf } from "react-icons/fa";
+import { MdComputer, MdOutlineSchool } from "react-icons/md";
+import { VerticalTimeline, VerticalTimelineElement } from "react-vertical-timeline-component";
+import "react-vertical-timeline-component/style.min.css";
 
 const Experience = () => {
   return (
     <div className="mt-8">
-      <h2 className="text-center mt-12 mb-8 text-2xl text-aluminium">
-        School & Work Experience
-      </h2>
+      <h2 className="text-center mt-12 mb-8 text-2xl text-aluminium">School & Work Experience</h2>
       <VerticalTimeline animate={true} lineColor={"#57EFB4"}>
+        <VerticalTimelineElement
+          className="vertical-timeline-element--work"
+          contentStyle={{
+            background: "#222233",
+            color: "#57EFB4",
+            boxShadow: "0 3px 0 #57EFB4",
+          }}
+          contentArrowStyle={{ borderRight: "7px solid  #222233" }}
+          date="06.2023 - Present"
+          iconStyle={{
+            background: "#12121C",
+            color: "#57EFB4",
+            boxShadow: "0 0 0 4px #57EFB4, inset 0 2px 0 rgb(0 0 0 / 8%), 0 3px 0 4px rgb(0 0 0 / 5%)",
+          }}
+          icon={<MdComputer />}
+        >
+          <h3 className="font-semibold text-lg">Front-end Developer</h3>
+          <p className="font-body font-thin">
+            Company: FutureSight
+            <br />
+            City: Remote
+          </p>
+          <p className="font-body font-thin">React | Tailwind | Rest API | Next | Scrum</p>
+        </VerticalTimelineElement>
         <VerticalTimelineElement
           className="vertical-timeline-element--work"
           contentStyle={{
@@ -25,8 +44,7 @@ const Experience = () => {
           iconStyle={{
             background: "#12121C",
             color: "#57EFB4",
-            boxShadow:
-              "0 0 0 4px #57EFB4, inset 0 2px 0 rgb(0 0 0 / 8%), 0 3px 0 4px rgb(0 0 0 / 5%)",
+            boxShadow: "0 0 0 4px #57EFB4, inset 0 2px 0 rgb(0 0 0 / 8%), 0 3px 0 4px rgb(0 0 0 / 5%)",
           }}
           icon={<MdComputer />}
         >
@@ -36,9 +54,7 @@ const Experience = () => {
             <br />
             City: Gdańsk
           </p>
-          <p className="font-body font-thin">
-            React | GraphQL | Material UI | Scrum
-          </p>
+          <p className="font-body font-thin">React | GraphQL | Material UI | Scrum</p>
         </VerticalTimelineElement>
         <VerticalTimelineElement
           className="vertical-timeline-element--work"
@@ -52,8 +68,7 @@ const Experience = () => {
           iconStyle={{
             background: "#12121C",
             color: "#57EFB4",
-            boxShadow:
-              "0 0 0 4px #57EFB4, inset 0 2px 0 rgb(0 0 0 / 8%), 0 3px 0 4px rgb(0 0 0 / 5%)",
+            boxShadow: "0 0 0 4px #57EFB4, inset 0 2px 0 rgb(0 0 0 / 8%), 0 3px 0 4px rgb(0 0 0 / 5%)",
           }}
           icon={<MdComputer />}
         >
@@ -62,9 +77,7 @@ const Experience = () => {
             Company: Regionalna Pracownia Digitalizacji <br />
             City: Elbląg
           </p>
-          <p className="font-body font-thin">
-            Blender | Unity | Adobe Illustrator
-          </p>
+          <p className="font-body font-thin">Blender | Unity | Adobe Illustrator</p>
         </VerticalTimelineElement>
         <VerticalTimelineElement
           className="vertical-timeline-element--education"
@@ -78,26 +91,21 @@ const Experience = () => {
           iconStyle={{
             background: "#12121C",
             color: "#57EFB4",
-            boxShadow:
-              "0 0 0 4px #57EFB4, inset 0 2px 0 rgb(0 0 0 / 8%), 0 3px 0 4px rgb(0 0 0 / 5%)",
+            boxShadow: "0 0 0 4px #57EFB4, inset 0 2px 0 rgb(0 0 0 / 8%), 0 3px 0 4px rgb(0 0 0 / 5%)",
           }}
           icon={<MdOutlineSchool />}
         >
-          <h3 className="font-semibold text-lg">
-            University of Applied Sciences in Elbląg
-          </h3>
+          <h3 className="font-semibold text-lg">University of Applied Sciences in Elbląg</h3>
           <p className="font-body font-thin">
             Faculty: The Institute of Applied Informatics <br />
-            Specializations: 3D Modelling in Medical Applications, Prototyping
-            and Interactive Media Degree: Enginner
+            Specializations: 3D Modelling in Medical Applications, Prototyping and Interactive Media Degree: Enginner
           </p>
         </VerticalTimelineElement>
         <VerticalTimelineElement
           iconStyle={{
             background: "#12121C",
             color: "#57EFB4",
-            boxShadow:
-              "0 0 0 4px #57EFB4, inset 0 2px 0 rgb(0 0 0 / 8%), 0 3px 0 4px rgb(0 0 0 / 5%)",
+            boxShadow: "0 0 0 4px #57EFB4, inset 0 2px 0 rgb(0 0 0 / 8%), 0 3px 0 4px rgb(0 0 0 / 5%)",
           }}
           icon={<FaHourglassHalf />}
         />
