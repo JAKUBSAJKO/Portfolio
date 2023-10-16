@@ -1,8 +1,8 @@
 import Head from "next/head.js";
-import { client } from "../../utils/ContentfulClient.js";
-import Album from "../../components/album.js";
 import { useState } from "react";
+import Album from "../../components/album.js";
 import ShowMoreButton from "../../components/showMoreBtn.js";
+import { client } from "../../utils/ContentfulClient.js";
 
 const Albums = ({ albums }) => {
   const [countAlbums, setCountAlbums] = useState(6);
@@ -13,18 +13,14 @@ const Albums = ({ albums }) => {
         <title>Jakub Sajko | Music Albums Collection</title>
         <link rel="icon" href="/logo.ico" type="image/x-icon" />
       </Head>
-      <h1 className="text-center mt-8 mb-12 text-3xl font-bold md:text-4xl md:mx-8">
-        My music albums collection
-      </h1>
-      <div className="px-8 flex flex-col justify-center items-center gap-12 md:flex-row md:flex-wrap md:gap-16 lg:mx-16">
+      <h1 className="text-center mt-8 mb-12 text-3xl font-bold md:text-4xl md:mx-8">My music albums collection</h1>
+      <div className="px-8 flex flex-col justify-center items-center gap-12 md:flex-row md:flex-wrap md:gap-16 lg:mx-16 lg:mx-auto lg:max-w-5xl">
         {albums.slice(0, countAlbums).map((album) => (
           <Album key={album.sys.id} album={album} />
         ))}
       </div>
       <div className="w-full flex justify-center">
-        {albums.length >= countAlbums ? (
-          <ShowMoreButton onClick={() => setCountAlbums((prev) => prev + 6)} />
-        ) : null}
+        {albums.length >= countAlbums ? <ShowMoreButton onClick={() => setCountAlbums((prev) => prev + 6)} /> : null}
       </div>
     </div>
   );
